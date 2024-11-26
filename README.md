@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+[# Role Management Dashboard
+]
+This is a React-based Role Management Dashboard designed to simplify the management of user roles and their associated permissions. The dashboard includes functionality for creating, editing, deleting, and managing permissions for different roles in a user-friendly interface.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+# Role Management
+- View Roles: Displays a list of all roles with their details.
+- Add New Role: Create new roles using the RoleForm component.
+- Delete Role: Remove roles from the system.
+## Home Page
+- View and manage user accounts.
+- Define and update role permissions.
+- Monitor system activities and logs (coming soon).
+## Company Profile
+- Integrity: We uphold the highest standards of integrity in all our actions.
+- Our Mission
+-Contact Us
 
 ## Available Scripts
 
