@@ -1,0 +1,59 @@
+.permission-form {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 1rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.permissions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.permission-item {
+    display: flex;
+    align-items: center;
+}
+
+.permission-item input {
+    margin-right: 0.5rem;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .permission-form {
+        padding: 0.5rem;
+    }
+
+    .permissions-list {
+        gap: 0.6rem;
+    }
+
+    .submit-button {
+        padding: 0.5rem;
+        font-size: 14px;
+    }
+}

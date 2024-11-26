@@ -1,38 +1,305 @@
+/* General App Styles */
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9; /* Light background for the entire app */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure content covers entire height */
 }
 
+/* Logo Styles */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Header Section Styles */
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100vh; /* Ensure the header covers full screen */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px;
+  border-bottom: 2px solid #ddd; /* Adding a border to the header */
 }
 
-.App-link {
+/* Navbar Styles */
+.navbar {
+  padding: 15px;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-bottom: 2px solid #ddd; /* Border for the navbar */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f6f9; /* Light background */
+  height: 100%; /* Ensures the body takes up full screen */
+}
+
+/* Headings Styles */
+h1, h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* General Container Styles for Pages */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #ddd; /* Light border around the page content */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin-top: 20px;
+  min-height: 80vh; /* Ensure the container covers a good portion of the screen */
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+form input,
+form button,
+form select {
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+form button:disabled {
+  background-color: #ccc;
+}
+
+form button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px auto;
+  padding: 10px;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+ul li button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 600px) {
+  /* Navbar adjustment */
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* Form and List item adjustments */
+  form,
+  ul li {
+    max-width: 95%;
+  }
+
+  form input,
+  form button {
+    width: 100%;
+  }
+
+  ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ul li button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  /* Header font size adjustment for mobile */
+  .App-header {
+    font-size: calc(12px + 3vmin); /* Adjust for smaller screen sizes */
+  }
+
+  /* Button adjustments for mobile */
+  form button {
+    font-size: 16px;
+    padding: 12px 0;
   }
 }
+
+/* Adding subtle hover effect for list items */
+ul li:hover {
+  background-color: #f1f1f1;
+  border-color: #ccc;
+}
+
+/* Button active state styles */
+form button:active {
+  background-color: #004085;
+}
+
+/* Border and Shadow for the Home Page */
+.home-container {
+  padding: 20px;
+  border: 2px solid #ddd; 
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+  margin: 20px auto;
+  max-width: 1200px;
+  height: 100%; /* Ensure it takes full height */
+}
+
+/* Ensuring elements take the full screen */
+.home-container,
+.page-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.role-list-container {
+  max-width: 950px; 
+  margin: 50px auto;
+  padding: 50px; 
+  background-color: #ffffff; 
+  border: 1px solid #e0e0e0; 
+  border-radius: 5px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif; 
+}
+
+/* Heading Styles */
+.role-list-container h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+.company-profile {
+  max-width: 1200px; 
+  margin: 20px auto; 
+  padding: 30px; 
+  background-color: #ffffff; 
+  border: 1px solid #e0e0e0;
+  border-radius: 10px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif; 
+  color: #333; 
+}
+.company-profile h1,
+.company-profile h2 {
+  color: #2c3e50; 
+  margin-bottom: 20px; 
+  text-align: center; 
+}
+.company-profile h1 {
+  font-size: 2.5rem; 
+}
+.company-profile h2 {
+  font-size: 2rem; 
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  background-color: #f5f5f5; 
+  font-family: 'Arial', sans-serif;
+  color: #333; 
+}
+.content-container {
+  flex: 1;
+  padding: 60px 20px; 
+  margin: 20px auto; 
+  max-width: 1200px; 
+  box-sizing: border-box;
+  background-color: #ffffff; 
+  border: 1px solid #e0e0e0;
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Add content styles for better readability */
+.content-container h1 {
+  margin: 0 0 20px;
+}
+
+.content-container h1 {
+  font-size: 2.5rem;
+  color: #2c3e50; 
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 15px,10px;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: auto; 
+}
+
+
+
+
